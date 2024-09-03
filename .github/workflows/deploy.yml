@@ -1,0 +1,25 @@
+name: Deploy web app to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - main # Thay đổi thành tên branch mà bạn muốn tự động triển khai từ
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" # Hoặc phiên bản Node.js bạn đang sử dụng
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy to Firebase Hosting
+        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}

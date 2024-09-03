@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #ec1f55;
+    --text-color: #333;
+    --white-color: #fff;
+}
+
+
+.btn {
+    --size: 48px;
+    width: var(--size);
+    height: var(--size);
+    text-align: center;
+    line-height: var(--size);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.btn i {
+    line-height: var(--size);
+
+}
+
+@media (min-width: 1024px) {
+    .btn:hover {
+        background-color: #ccc;
+    }
+
+    
+    .btn.btn-toggle-play:hover {
+        background-color: #f3dde3;
+        color: var(--primary-color);
+    }
+
+    .song:hover {
+        background-color: #de4870;
+    }
+    
+    .song:hover .title,
+    .song:hover .author,
+    .song:hover .option {
+        color: var(--white-color);
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: var(--fadeIn-from);
+    }
+    to {
+        opacity: var(--fadeIn-to);
+    }
+}
