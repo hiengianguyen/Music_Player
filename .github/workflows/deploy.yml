@@ -3,7 +3,7 @@ name: Deploy web app to Firebase Hosting
 on:
   push:
     branches:
-      - main # Thay đổi thành tên branch mà bạn muốn tự động triển khai từ
+      - update # Thay đổi thành tên branch mà bạn muốn tự động triển khai từ
 
 jobs:
   deploy:
