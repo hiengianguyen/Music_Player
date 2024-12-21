@@ -1,7 +1,10 @@
 import {
-  songs,
-  listSong
-} from "./songs"
+  valueOfBox
+} from "./render.js"
+import {
+  songs
+} from "./songs.js"
+
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
@@ -35,6 +38,7 @@ const app = {
     });
   },
   // day
+  songs: songs[valueOfBox],
   setConfig: function (key, value) {
     this.config[key] = value;
     localStorage.setItem(PLAYER_STORAGE_KEY, JSON.stringify(this.config));
@@ -214,6 +218,7 @@ const app = {
   },
 
   start: function () {
+    console.log(valueOfBox)
     this.loadConfigs();
     this.defineProperties();
     this.handleEvents();

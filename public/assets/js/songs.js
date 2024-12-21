@@ -1,12 +1,12 @@
 const listSong = [
-    right24, 
-    anhTuVoi, 
-    ATSH, 
-    rv4
+    "K_Right24", 
+    "Anh Tu Voi", 
+    "ATSH", 
+    "RAPVIET4"
 ]
 
 const songs = {
-    right24: [
+    "K_Right24": [
         {
           name: "Truy Lùng Báo Vật",
           singer: "24K.RIGHT ft Sofia, producer: Masew,...",
@@ -45,7 +45,7 @@ const songs = {
         }
     ]
    , 
-    anhTuVoi: [
+    "Anh Tu Voi": [
         {
             name: "Ngày Mai Người Ta Lấy Chồng",
             singer: "Vôi Bản Đôn",
@@ -84,7 +84,7 @@ const songs = {
         }
     ]
     ,
-    ATSH: [
+    "ATSH": [
         {
           name: "Love Sand",
           singer: "HTH,JSOL,ALI Hoàng Dương",
@@ -147,7 +147,7 @@ const songs = {
         }
     ]
     ,
-    rv4: [
+    "RAPVIET4": [
         {
             name: "Anh Đã Làm Gì Đâu",
             singer: "Nhật Hoàng",
