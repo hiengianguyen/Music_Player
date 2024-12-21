@@ -14,7 +14,7 @@
       background-color: #f4f4f4;
     }
 
-    .container {
+    #container {
       display: grid;
       grid-template-columns: repeat(2, 1fr); 
       max-width: 666px; 
@@ -40,7 +40,8 @@
   </style>
 </head>
 <body>
-  <div class="container"></div>
-  <script src="./public/assets/js/render.js" type="module"></script>
+  <div id="container"></div>
+  <script type="module" src="./public/assets/js/render.js"></script>
+  <script type="module" src="./public/assets/js/getData.js"></script>
 </body>
 </html>
