@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hãy Chọn 1 Loại Nhạc</title>
+  <style>
+    /* Đặt kiểu cho body để căn giữa nội dung */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Chiều cao của cửa sổ trình duyệt */
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Box container để giữ 4 box */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 cột */
+      max-width: 666px; /* Chiều rộng tối đa */
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    
+    .box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 60px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+  </div>
+  <script src="./public/assets/js/getData.js"></script>
+</body>
+</html>

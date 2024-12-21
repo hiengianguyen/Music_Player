@@ -1,3 +1,8 @@
+import {
+  songs,
+  listSong
+} from "./songs"
+
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -29,56 +34,7 @@ const app = {
       },
     });
   },
-  songs: [
-    {
-      name: "Truy Lùng Báo Vật",
-      singer: "24K.RIGHT ft Sofia, producer: Masew,...",
-      image: "./assets/img/rapviet.webp",
-      path: "./assets/music/truylungbaovat.mp3",
-    },
-    {
-      name: "Khoá Chân",
-      singer: "24K.RIGHT [Feat. MASON NGUYỄN, NAM COCAIN, TUANN]",
-      image: "./assets/img/khoachan.jpg",
-      path: "./assets/music/khoachan.mp3",
-    },
-    {
-      name: "Phụ Hộ Cho Con",
-      singer: "24K.RIGHT [feat. B RAY, HUỲNH CÔNG HIẾU, HIPZ]",
-      image: "./assets/img/phuhochocon.jpg",
-      path: "./assets/music/phuhochocon.mp3",
-    },
-    {
-      name: "Love Sand",
-      singer: "HTH,JSOL,ALI Hoàng Dương",
-      image: "./assets/img/anhtraisayhi.jpg",
-      path: "./assets/music/lovesand.mp3",
-    },
-    {
-      name: "Reget",
-      singer: "Quân A.P, Quang Trung, ALi HD, Pháp Kiều FT Lâm Bảo Ngọc",
-      image: "./assets/img/anhtraisayhi.jpg",
-      path: "./assets/music/reget.mp3",
-    },
-    {
-      name: "Cô Đơn Trên Sofa",
-      singer: "Trung Quân",
-      image: "./assets/img/codontrensofa.jpg",
-      path: "./assets/music/codontrensofa.mp3",
-    },
-    {
-      name: "Ngày Mai Người Ta Lấy Chồng",
-      singer: "Vôi Bản Đôn",
-      image: "./assets/img/anhtu.png",
-      path: "./assets/music/ngaymainguoitalaychong.mp3",
-    },
-    {
-      name: "Đừng Quên Tên Anh",
-      singer: "Anh Tú",
-      image: "./assets/img/dungquentenanh.jpg",
-      path: "./assets/music/dungquentenanh.mp3",
-    },
-  ],
+  // day
   setConfig: function (key, value) {
     this.config[key] = value;
     localStorage.setItem(PLAYER_STORAGE_KEY, JSON.stringify(this.config));
