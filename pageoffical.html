@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hãy Chọn 1 Loại Nhạc</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hãy Chọn 1 Loại Nhạc</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
 
-    #container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      max-width: 666px; 
-      width: 100%;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    
-    .box {
-    background-color: #4CAF50;
-    color: white;
-    padding: 60px;
-    text-align: center;
-    border-radius: 8px;
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 666px;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+      }
 
-    a {
-      text-decoration: none;
-      margin: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div id="container"></div>
-  <script type="module" src="./public/assets/js/render.js"></script>
-  <script type="module" src="./public/assets/js/getData.js"></script>
-  <script type="module" src="./public/assets/html/main.js"></script>
-</body>
+      .box {
+        background-color: #4caf50;
+        color: white;
+        padding: 60px;
+        text-align: center;
+        border-radius: 8px;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="./public/assets/js/render.js"></script>
+  </body>
 </html>
