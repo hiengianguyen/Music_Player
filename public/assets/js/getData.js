@@ -1,33 +1,28 @@
-import { songs } from "../js/songs.js";
-import {API} from "./api.js";
-
+import { API } from "./api.js";
+import { songs } from "./songs.js";
 const boxs = document.querySelectorAll(".box");
-
-for(const box of boxs) {
-    box.onclick = () => {
-        // box.getAttribute("data-value")
-        // const obj = songs[box.getAttribute("data-value")];
-        // fetch(API, {
-        //     method: 'POST',  // Phương thức POST để gửi dữ liệu
-        //     headers: {
-        //         'Content-Type': 'application/json'  // Xác định kiểu dữ liệu gửi lên là JSON
-        //     },
-        //     body: JSON.stringify(obj)  // Chuyển đối tượng thành chuỗi JSON
-        // }).finally(function() {
-        //     console.log(123)
-        // })
+let indexOfBoxs = 0;
+function handleData() {
+  return new Promise((rs) => {
+    for(const box of boxs) {
+      box.onclick = () => {
+        const value = box.getAttribute("data-value");
+        const index = box.getAttribute("index");
+        localStorage.setItem('savedValue2', value);
+        localStorage.setItem('indexOfBoxs', index);
+        rs();
+      }
+      indexOfBoxs++;
     }
-            
+
+  })
 }
 
-// URL của API mà bạn muốn lấy dữ liệu
+await handleData();
+const savedValue2 = localStorage.getItem('savedValue2');
+const indexs2 = localStorage.getItem('indexOfBoxs');
 
-try {
-    fetch(API)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data)
-      })
-  } catch (error) {
-    console.error(error)
-  }
+var allSong = songs[indexs2][savedValue2];
+
+// console.log(savedValue2 ," " ,indexs2)
+export {allSong};
