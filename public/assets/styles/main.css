@@ -49,7 +49,7 @@ body {
   color: var(--text-color);
 }
 
-.cd {
+#cd {
   width: 200px;
   margin: 10px auto 14px;
 }
@@ -367,4 +367,8 @@ body {
 .footer__social-icon {
   color: var(--white-color);
   font-size: 2.3rem;
+}
+
+.fa-solid {
+  color: #666;
 }
