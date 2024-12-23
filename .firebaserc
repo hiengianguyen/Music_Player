@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "giahien-music-app"
-  }
+    "default": "music-player-b3b35",
+    "to hosting": "music-player-b3b35"
+  },
+  "targets": {},
+  "etags": {}
 }
