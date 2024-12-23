@@ -1,7 +1,6 @@
 import { songs } from "./songs.js";
 
 const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 
 const heading = document.querySelector(".dashboard__name-song");
 const cdThumd = document.querySelector(".cd__thumb");
@@ -40,10 +39,6 @@ const app = {
     this.config[key] = value;
     localStorage.setItem(PLAYER_STORAGE_KEY, JSON.stringify(this.config));
   },
-  //   setConfigSong: function (key, value) {
-  //     this.configSong[key] = value;
-  //     localStorage.setItem("Song", JSON.stringify(this.configSong));
-  //   },
   render() {
     const htmls = this.songs.map((song, index) => {
       return `

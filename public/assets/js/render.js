@@ -16,6 +16,6 @@ for (const box of boxs) {
   box.onclick = () => {
     localStorage.setItem("musicChannel", box.dataset.value);
     localStorage.setItem("musicIndex", box.getAttribute("index"));
-    window.location.href = "public/assets/html/index.html";
+    window.location.href = "public/assets/html/pagePlaySongs.html";
   };
 }
