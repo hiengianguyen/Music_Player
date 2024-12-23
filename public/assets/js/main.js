@@ -1,7 +1,6 @@
 import { songs } from "./songs.js";
 
 const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 
 const heading = document.querySelector(".dashboard__name-song");
 const cdThumd = document.querySelector(".cd__thumb");
