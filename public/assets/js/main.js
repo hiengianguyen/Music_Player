@@ -40,10 +40,6 @@ const app = {
     this.config[key] = value;
     localStorage.setItem(PLAYER_STORAGE_KEY, JSON.stringify(this.config));
   },
-  //   setConfigSong: function (key, value) {
-  //     this.configSong[key] = value;
-  //     localStorage.setItem("Song", JSON.stringify(this.configSong));
-  //   },
   render() {
     const htmls = this.songs.map((song, index) => {
       return `
