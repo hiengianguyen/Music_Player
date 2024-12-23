@@ -1,7 +1,6 @@
 {
   "projects": {
-    "default": "music-player-b3b35",
-    "to hosting": "music-player-b3b35"
+    "hosting": "nguyengiahien-musicapp"
   },
   "targets": {},
   "etags": {}
