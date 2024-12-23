@@ -15,12 +15,18 @@ body {
   background-color: #ccc;
   -webkit-tap-highlight-color: transparent;
 }
+
+.write-text i {
+  color: #fff;
+}
+
 .main {
   width: 100%;
   max-width: 723px;
   margin: 0 auto 0;
   position: relative;
   background-color: var(--white-color);
+  clear: both;
 }
 
 .dashboard {
@@ -371,4 +377,8 @@ body {
 
 .fa-solid {
   color: #666;
+}
+
+.active i {
+  color: #ec1f55;
 }
