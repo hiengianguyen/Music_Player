@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "giahien-music-app"
-  }
+    "hosting": "nguyengiahien-musicapp"
+  },
+  "targets": {},
+  "etags": {}
 }
