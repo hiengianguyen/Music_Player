@@ -194,6 +194,12 @@ const songs = [
         path: "../music/RV4/chomotnguoi.mp3",
       },
       {
+        name: "Bốn Mùa Phát Lộc",
+        singer: "Gill",
+        image: "../img/rapviet.webp",
+        path: "../music/RV4/bonmuaphatloc.mp3",
+      },
+      {
         name: "Lướt Trên Con Sóng",
         singer: "DangRangTo",
         image: "../img/rapviet.webp",
