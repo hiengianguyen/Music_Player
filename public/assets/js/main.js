@@ -2,6 +2,8 @@ import { songs } from "./songs.js";
 
 const $ = document.querySelector.bind(document);
 
+const iconPage = document.querySelector("#icon-page");
+const title = document.querySelector("#title");
 const heading = document.querySelector(".dashboard__name-song");
 const cdThumd = document.querySelector(".cd__thumb");
 const audio = document.querySelector("#audio");
@@ -61,7 +63,9 @@ const app = {
     playList.innerHTML = htmls.join("");
   },
   loadCurrentSong: function () {
+    title.textContent = this.currentSong.name;
     heading.textContent = this.currentSong.name;
+    iconPage.setAttribute("href", this.currentSong.image);
     cdThumd.style.backgroundImage = `url('${this.currentSong.image}')`;
     audio.src = this.currentSong.path;
   },
