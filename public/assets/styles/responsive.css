@@ -1,0 +1,9 @@
+@media (max-width: 740px) {
+  #container {
+    margin-top: 2pc;
+    width: auto;
+  }
+  .box {
+    margin: 15px;
+  }
+}
