@@ -56,7 +56,7 @@ const app = {
                     <p class="singer">${song.singer}</p>
                   </div>
                   <div class="option">
-                    <i class="fa-solid fa-ellipsis"></i>
+                    <i class="fa-solid fa-ellipsis write-text"></i>
                   </div>
                 </div>`;
     });

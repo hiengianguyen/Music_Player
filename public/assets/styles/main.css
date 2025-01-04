@@ -382,3 +382,7 @@ body {
 .active i {
   color: #ec1f55;
 }
+
+.active .option i {
+  color: #fff;
+}
