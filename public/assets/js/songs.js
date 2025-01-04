@@ -219,6 +219,50 @@ const songs = [
       },
     ],
   },
+  {
+    id: "5",
+    name: "BRAY",
+    channel: "Singer",
+    songList: [
+      {
+        name: "THIÊU THÂN",
+        singer: "B RAY x SOFIA & CHÂU ĐĂNG KHOA",
+        image: "../img/bray.webp",
+        path: "../music/BRAY/thieuthan.mp3",
+      },
+      {
+        name: "Ex's Hate Me",
+        singer: "B Ray x Masew (Ft AMEE)",
+        image: "../img/bray.webp",
+        path: "../music/BRAY/hateme.mp3",
+      },
+      {
+        name: "Ở Trong Thành Phố",
+        singer: "B Ray x Masew (Ft. Hannah B )",
+        image: "../img/bray.webp",
+        path: "../music/BRAY/otrongthanhpho.mp3",
+      },
+      {
+        name: "CON TRAI CƯNG (Piano Version)",
+        singer: "ICM x B Ray",
+        image: "../img/bray.webp",
+        path: "../music/BRAY/contraicung.mp3",
+      },
+      {
+        name: "XIN ĐỪNG NHẤC MÁY",
+        singer: "B RAY X HAN SARA",
+        image: "../img/bray.webp",
+        path: "../music/BRAY/xindungnhacmay.mp3",
+      },
+      {
+        name: "Cao Ốc 20",
+        singer: "B RAY x DatG (ft MASEW x K-ICM)",
+        image: "../img/bray.webp",
+        path: "../music/BRAY/caooc20.mp3",
+      },
+      
+    ],
+  }
 ];
 // get name of listsong and put in array
 const listSong = songs.map((song) => {
