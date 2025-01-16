@@ -49,7 +49,7 @@ const app = {
               }" data-index="${index}">
                   <div
                     class="thumb"
-                    style="background-image: url('${song.image}')"
+                    style="background-image: url('${songs[indexValue].image}')"
                   ></div>
                   <div class="body">
                     <h3 class="title">${song.name}</h3>
@@ -65,8 +65,8 @@ const app = {
   loadCurrentSong: function () {
     title.textContent = this.currentSong.name;
     heading.textContent = this.currentSong.name;
-    iconPage.setAttribute("href", this.currentSong.image);
-    cdThumd.style.backgroundImage = `url('${this.currentSong.image}')`;
+    iconPage.setAttribute("href", songs[indexValue].image);
+    cdThumd.style.backgroundImage = `url('${songs[indexValue].image}')`;
     audio.src = this.currentSong.path;
   },
 
